@@ -1,1 +1,35 @@
 /* © James Pink-Gyett 2026 */
+
+/* Import Fonts */
+
+/* https://fonts.google.com/specimen/Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Global Variables */
+:root {
+    /* https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
+    --background-colour-1: #6c757d;
+    --background-colour-2: #e9ecef;
+
+    /* https://coolors.co/palette/250902-38040e-640d14-800e13-ad2831 */
+    --colour-1: #800e13;
+    --colour-1-hl: #640d14;
+
+    --font-1: "Outfit";
+}
+
+body {
+    font-family: var(--font-1);
+    background-color: var(--background-colour-1);
+}
+
+/* BOOTSTRAP OVERWRITES */
+
+/* .bg */
+.bg-colour-1 {
+    background-color: var(--background-colour-1);
+}
+
+.bg-colour-2 {
+    background-color: var(--background-colour-2);
+}
