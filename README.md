@@ -8,7 +8,9 @@ This project is also a part of my university work.
 
 ## ⬇️ Installation
 
-The HTML section can be ran locally without any programs, just open the index.html.
+The HTML section can be ran locally without any programs, just open the index.html. Or use the Github Pages link:
+
+https://jam-esss.github.io/safety-incident-reporter/HTML/
 
 The PHP section cannot be ran locally without a local server environment such as WSL (Windows Subsystem for Linux) or XAMPP. See below for more information:
 
