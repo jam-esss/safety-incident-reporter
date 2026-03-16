@@ -8,8 +8,10 @@
 /* Global Variables */
 :root {
     /* https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529 */
-    --background-colour-1: #6c757d;
+    --background-colour-1: #CED4DA;
     --background-colour-2: #e9ecef;
+    --background-colour-3: #ADB5BD;
+    --background-colour-4: #212529;
 
     /* https://coolors.co/palette/250902-38040e-640d14-800e13-ad2831 */
     --colour-1: #800e13;
@@ -32,4 +34,42 @@ body {
 
 .bg-colour-2 {
     background-color: var(--background-colour-2);
+}
+
+.bg-colour-3 {
+    background-color: var(--background-colour-3);
+}
+
+.bg-colour-4 {
+    background-color: var(--background-colour-4);
+}
+
+nav{
+    border-bottom: 1px solid var(--colour-1)
+}
+
+.nav-link{
+    color: var(--colour-1);
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--colour-1-hl);
+}
+
+.bg-image-1{
+    /* Courtesy of @hojipago https://unsplash.com/photos/several-cranes-above-the-buildings-D46mXLsQRJw */
+    background-image: url('/safety-incident-reporter/HTML/images/cranes.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
