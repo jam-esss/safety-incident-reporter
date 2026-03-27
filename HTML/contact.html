@@ -7,7 +7,7 @@
         Contact | Logo Ipsum
     </title>
     <!-- Tab Favicon -->
-    <link rel="icon" href="images/logos/logoipsum-icon.png">
+    <link rel="icon" href="./images/logos/logoipsum-icon.png">
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -18,10 +18,10 @@
 
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+<nav class="navbar navbar-expand-md bg-colour-3 fixed-top">
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="/safety-incident-reporter/HTML/">
+        <a class="navbar-brand" href="./">
             <img src="images/logos/logoipsum-long.png" alt="Logo Ipsum">
         </a>
 
@@ -30,14 +30,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-end bg-colour-3" tabindex="-1" id="offcanvasNavbar"
              aria-labelledby="offcanvasNavbarLabel">
 
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    <img src="images/logos/logoipsum-icon.png" alt="Logo Ipsum">
+                    <img src="./images/logos/logoipsum-icon.png" alt="Logo Ipsum">
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
             </div>
 
@@ -45,21 +45,21 @@
                 <ul class="navbar-nav justify-content-end text-center flex-grow-1 pe-3">
 
                     <li class="nav-item p-3">
-                        <a class="nav-link fs-5" aria-current="page" href="/safety-incident-reporter/HTML/">
+                        <a class="nav-link fs-5" aria-current="page" href="./">
                             <i class="bi bi-house"></i>
                             Home
                         </a>
                     </li>
 
                     <li class="nav-item p-3">
-                        <a class="nav-link fs-5" href="/safety-incident-reporter/HTML/dashboard.html">
+                        <a class="nav-link fs-5" href="./dashboard.html">
                             <i class="bi bi-speedometer2"></i>
                             Dashboard
                         </a>
                     </li>
 
                     <li class="nav-item p-3">
-                        <a class="nav-link fs-5 active" href="/safety-incident-reporter/HTML/contact.html">
+                        <a class="nav-link fs-5 active" href="./contact.html">
                             <i class="bi bi-chat-dots"></i>
                             Contact
                         </a>
@@ -70,12 +70,131 @@
         </div>
     </div>
 </nav>
-<!-- -->
 
+<!-- Contact Section -->
+<section class="d-flex justify-content-center align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center glass py-3"
+         style="max-width:800px; min-height: 250px">
+        <form class="row g-3 needs-validation w-100" id="contactForm" novalidate>
+            <h1>
+                Contact Us
+            </h1>
+            <div class="col-md-6">
+                <label for="fname" class="form-label">
+                    First name
+                </label>
+                <input type="text" class="form-control" id="fname" required>
+                <div class="invalid-feedback">
+                    Invalid Input.
+                </div>
+            </div>
 
+            <div class="col-md-6">
+                <label for="sname" class="form-label">
+                    Surname
+                </label>
+                <input type="text" class="form-control" id="sname" required>
+                <div class="invalid-feedback">
+                    Invalid Input.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="company" class="form-label">
+                    Company
+                </label>
+                <input type="text" class="form-control" id="company" required>
+                <div class="invalid-feedback">
+                    Invalid Input.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">
+                    Email
+                </label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                    Invalid Input.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="enquiry" class="form-label">
+                    Enquiry
+                </label>
+                <select class="form-select" id="enquiry" required>
+                    <option selected disabled value="">
+                        Choose...
+                    </option>
+                    <option>
+                        General Enquiry
+                    </option>
+                    <option>
+                        Technical Issue / Bug Report
+                    </option>
+                    <option>
+                        Account Access Issues
+                    </option>
+                    <option>
+                        Help Using the System
+                    </option>
+                </select>
+                <div class="invalid-feedback">
+                    Invalid Input.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="howtocontact" class="form-label">
+                    How would you like to be contacted?
+                </label>
+                <select class="form-select" id="howtocontact" required>
+                    <option selected disabled value="">
+                        Choose...
+                    </option>
+                    <option>
+                        Phone
+                    </option>
+                    <option>
+                        Email
+                    </option>
+                </select>
+                <div class="invalid-feedback">
+                    Invalid Input.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-logo-ipsum" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+
+        <div id="successMessage" style="display: none">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+            <h2 class="my-3">
+                Thank you for your query!
+                <br>
+                We will respond to you as soon as possible.
+            </h2>
+            <img class="my-3" src="images/logos/logoipsum-long.png" alt="Logo Ipsum">
+            <a class="btn btn-logo-ipsum" href="./dashboard.html">
+                Return To Dashboard
+            </a>
+            </div>
+        </div>
+
+    </div>
+</section>
 <!-- Include Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+<!-- Include Bootstrap Form Validator JS -->
+<script src="./scripts/BootstrapFormValidator.js"></script>
+
 </body>
 </html>
