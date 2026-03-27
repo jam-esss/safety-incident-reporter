@@ -24,6 +24,10 @@ body {
     font-family: var(--font-1);
     background-color: var(--background-colour-1);
 }
+section{
+    margin-top: calc(70px);
+    min-height: calc(100vh - 70px);
+}
 
 /* BOOTSTRAP OVERWRITES */
 
@@ -42,6 +46,16 @@ body {
 
 .bg-colour-4 {
     background-color: var(--background-colour-4);
+}
+
+/* .btn */
+.btn-logo-ipsum{
+    background-color: var(--colour-1);
+    color: #fff;
+}
+.btn-logo-ipsum:hover{
+    background-color: var(--colour-1-hl);
+    color: #fff;
 }
 
 nav{
