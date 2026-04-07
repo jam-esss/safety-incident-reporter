@@ -73,7 +73,7 @@ nav{
 
 .bg-image-1{
     /* Courtesy of @hojipago https://unsplash.com/photos/several-cranes-above-the-buildings-D46mXLsQRJw */
-    background-image: url('/safety-incident-reporter/HTML/images/cranes.jpg');
+    background-image: url('/images/cranes.jpg');
     background-size: cover;
     background-position: center;
 }

@@ -1,4 +1,4 @@
-# 📃 Safety Incident Reporter
+# 📃 Safety Incident Reporter HTML
 
 ## ℹ️ Overview
 
@@ -10,15 +10,7 @@ This project is also a part of my university work.
 
 The HTML section can be ran locally without any programs, just open the index.html. Or use the Github Pages link:
 
-https://jam-esss.github.io/safety-incident-reporter/HTML/
-
-The PHP section cannot be ran locally without a local server environment such as WSL (Windows Subsystem for Linux) or XAMPP. See below for more information:
-
-(WSL, incl. PHPMyAdmin, Apache2, MySQL etc..)
-https://www.sabbirz.com/blog/install-phpmyadmin-on-wsl-ubuntu
-
-(XAMPP)
-https://www.apachefriends.org/
+https://jam-esss.github.io/safety-incident-reporter-html/
 
 ## 📷 Screenshots
 
